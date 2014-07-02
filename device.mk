@@ -31,13 +31,14 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_AAPT_CONFIG := hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# HTC IR Blaster resources
+# HTC IR Blaster resources and Dotcase
 PRODUCT_PACKAGES += \
     CIRModule \
     htcirlibs \
     cir \
     cir_fw_update \
-    libhtcirinterface_jni
+    libhtcirinterface_jni \
+    Dotcase
 
 # Ramdisk
 PRODUCT_PACKAGES += \
