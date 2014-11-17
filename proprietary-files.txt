@@ -10,6 +10,7 @@ bin/mm-qcamera-daemon
 bin/mpdecision
 bin/ptt_socket_app
 bin/qseecomd
+bin/radish
 bin/rmt_storage
 bin/thermal-engine
 bin/time_daemon
@@ -190,7 +191,6 @@ lib/libawb_calibration.so
 lib/libcamera_aec.so
 lib/libcamera_af.so
 lib/libcamera_awb.so
-lib/libcamera_metadata.so
 lib/libcamerapp.so
 lib/libgps.utils.so
 lib/libhtccamera_yushaniiproc.so

@@ -50,9 +50,6 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := krait
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 
-# Charge mode
-BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
-
 # Flags
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
@@ -73,9 +70,6 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-TARGET_QCOM_AUDIO_VARIANT := caf
-TARGET_QCOM_DISPLAY_VARIANT := caf-new
-TARGET_QCOM_MEDIA_VARIANT := caf-new
 TARGET_USES_QCOM_BSP := true
 
 # Audio
@@ -109,8 +103,14 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
+# Includes
+TARGET_SPECIFIC_HEADER_PATH := device/htc/m8/include
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Logging
+TARGET_USES_LOGD := false
 
 # NFC
 BOARD_NFC_HAL_SUFFIX := msm8974
@@ -162,7 +162,6 @@ BOARD_SEPOLICY_UNION += \
     surfaceflinger.te \
     system.te \
     ueventd.te \
-    wpa_socket.te \
     wpa.te
 
 # Webkit
