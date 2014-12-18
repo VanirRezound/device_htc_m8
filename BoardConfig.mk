@@ -44,7 +44,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_ARCH_VARIANT_CPU := cortex-a15
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -63,10 +62,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02008000 -
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
 TARGET_KERNEL_CONFIG := cm_m8_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8974
-
-# Toolchains
-TARGET_ENABLE_PREBUILT_CLANG := true
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.9
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
